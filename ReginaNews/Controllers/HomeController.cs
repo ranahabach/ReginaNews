@@ -11,21 +11,31 @@ namespace ReginaNews.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
-
-        public HomeController(ILogger<HomeController> logger)
+        NewsContext Db; 
+        public HomeController (NewsContext context)
         {
-            _logger = logger;
+            Db = context;
+
         }
 
+        private readonly ILogger<HomeController> _logger;
+
+        //public HomeController(ILogger<HomeController> logger)
+        //{
+        //    _logger = logger;
+        //}
+
         public IActionResult Index()
+
         {
-            return View();
+            var result = Db.Category.ToList();               
+            return View(result);
         }
         public IActionResult About()
         {
             return View();
         }
+        
 
         public IActionResult Privacy()
         {
