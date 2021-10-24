@@ -4,17 +4,23 @@
 
         
         <div class="row">
-            @foreach(var item in Model)
-            {
 
             
-            <div class="col-md-4 col-lg-4 d-flex align-items-stretch mb-5 mb-lg-0">
-                <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
-                    <div class="icon"><i class="fas fa-heartbeat"></i></div>
-                    <h4 class="title"><a href="">@item.Name</a></h4>
-                    <p class="description">@item. Description </p>
+            @foreach (var item in Model)
+            {
+
+
+                <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-7 mb-lg-0">
+
+                    <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+                        <div class="icon">
+                            <i class="fas fa-sign"></i>
+                        </div>
+                      
+                        <h4 class="title"><a href="">@item.Name</a></h4>
+                        <p class="description">@item.Description </p>
+                    </div>
                 </div>
-            </div>
             }
 
         </div>
