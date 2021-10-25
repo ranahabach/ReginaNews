@@ -1,11 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using ReginaNews.Models;
-using System;
-using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
-using System.Threading.Tasks;
 
 namespace ReginaNews.Controllers
 {
@@ -42,8 +39,15 @@ namespace ReginaNews.Controllers
             return View();
         }
         public IActionResult Contact ()
+            
         {
             return View();
+        }
+        [HttpPost]
+        public IActionResult SaveContact(ContactUs model)
+            
+        {
+            return RedirectToAction("Index");
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
