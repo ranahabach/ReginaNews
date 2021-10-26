@@ -32,7 +32,12 @@ namespace ReginaNews.Controllers
         {
             return View();
         }
-        
+        public IActionResult TeamMember()
+        {
+            return View();
+        }
+
+
 
         public IActionResult Privacy()
         {
