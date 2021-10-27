@@ -8,8 +8,8 @@ namespace ReginaNews.Controllers
 {
     public class HomeController : Controller
     {
-        NewsContext Db; 
-        public HomeController (NewsContext context)
+        NewsContext Db;
+        public HomeController(NewsContext context)
         {
             Db = context;
 
@@ -25,7 +25,7 @@ namespace ReginaNews.Controllers
         public IActionResult Index()
 
         {
-            var result = Db.Category.ToList();               
+            var result = Db.Category.ToList();
             return View(result);
         }
         public IActionResult About()
@@ -35,6 +35,12 @@ namespace ReginaNews.Controllers
         public IActionResult TeamMember()
         {
             return View();
+        }
+        public IActionResult News(int id)
+
+        {
+            var result = Db.News.Where(x =>x.CategoryId == id).ToList();
+             return View(result);
         }
 
 
