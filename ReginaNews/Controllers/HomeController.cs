@@ -39,7 +39,7 @@ namespace ReginaNews.Controllers
         public IActionResult News(int id)
 
         {
-            var result = Db.News.Where(x =>x.CategoryId == id).ToList();
+            var result = Db.News.Where(x =>x.CategoryId == id).OrderByDescending(x=>x.Date).ToList();
              return View(result);
         }
 
