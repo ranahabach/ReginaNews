@@ -49,6 +49,13 @@ namespace ReginaNews.Controllers
         {
             return View();
         }
+        public IActionResult DeletNews(int id)
+        {
+            var News = Db.News.Find(id);
+            Db.News.Remove(News);
+            Db.SaveChanges();
+            return RedirectToAction("index");
+        }
         public IActionResult Contact ()
             
         {

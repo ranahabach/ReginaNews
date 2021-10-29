@@ -4,33 +4,35 @@
 @model List<News>
 
 <section id="News" class="News">
-    <div class="container aos-init aos-animate" data-aos="fade-up">
-
-        <div class="section-title">
-            <h2>News</h2>
-        </div>
-
-
-        @foreach (var item in Model)
-        {
-    <center>
-        <div class="row" style="margin:300px">
-            <div class="col-12">
-                <img src="/assets/img/12.jpg" class="=image-fluid" style=" height:200px;width:200px" alt="">
+            <div class="container" data-aos="fade-up">
+            <div class="section-title">
+                <h2>News</h2>
             </div>
-            <div class="col-lg-12">
-                <h3>@item.Title</h3>
-                <h4>@item.Date</h4>
-                <p class="fount-italic">
 
-                    @item.Topic
-                </p>
-            </div>
-        </div><hr />
-    </center>
+            @foreach (var item in Model)
+            {
+                <center>
+                    <div class="row" style="margin:100px">
+                        <div class="col-12">
+                            <img src="/assets/img/13.jpg" class="=image-fluid" style=" height:200px;width:200px" alt="">
+                        </div>
+                        <div class="col-lg-12">
+                            <h3>@item.Title</h3>
+                            <h4>@item.Date</h4>
+                            <p class="fount-italic">
 
-                }
+                                @item.Topic
+                            </p>
+                        </div>
+                    </div>
+                    <center>
+                        <a class="btn btn-danger " style="height:30px;width:100px" href="/Home/DeletNews/@item.Id">Delet</a>
+                    </center>
+                    <hr />
+                </center>
+
+            }
 
 
-            
+
         </div>                    }
