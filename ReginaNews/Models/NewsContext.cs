@@ -17,6 +17,10 @@ namespace ReginaNews.Models
         public DbSet<News> News { get; set; }
         public DbSet<ContactUs> ContactUs { get; set; }
         public DbSet<TeamMember> TeamMember  { get; set; }
+        public DbSet<LoginModel> LoginModel { get; set; }
+        public DbSet<Register> Register { get; set; }
+
+
     }
 
 }
