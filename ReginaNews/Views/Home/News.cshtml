@@ -18,15 +18,18 @@
                         </div>
                         <div class="col-lg-12">
                             <h3>@item.Title</h3>
-                            <h4>@item.Date</h4>
-                            <p class="fount-italic">
-
-                                @item.Topic
-                            </p>
+                            <div class="alert-warning p-auto">
+                                <h4>@item.Date</h4>
+                            </div>
+                                <p class="fount-italic">
+                                    <div class="alert-info p-auto">
+                                        @item.Topic
+                                    </div>
+                                </p>
+                            </div>
                         </div>
-                    </div>
                     <center>
-                        <a class="btn btn-danger " style="height:30px;width:100px" href="/Home/DeletNews/@item.Id">Delet</a>
+                        <a class="btn btn-danger text-center text-yallow " style="height:30px;width:100px " href="/Home/DeletNews/@item.Id"><b>Delet</b></a>
                     </center>
                     <hr />
                 </center>
