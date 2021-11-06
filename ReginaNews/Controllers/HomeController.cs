@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using ReginaNews.Models;
 using System.Diagnostics;
@@ -28,6 +29,7 @@ namespace ReginaNews.Controllers
             var result = Db.Category.ToList();
             return View(result);
         }
+        [Authorize]
         public IActionResult About()
         {
             return View();
