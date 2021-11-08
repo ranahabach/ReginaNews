@@ -29,7 +29,7 @@ namespace ReginaNews.Controllers
             var result = Db.Category.ToList();
             return View(result);
         }
-        [Authorize]
+       
         public IActionResult About()
         {
             return View();
@@ -46,7 +46,7 @@ namespace ReginaNews.Controllers
         }
 
 
-
+        [Authorize]
         public IActionResult Privacy()
         {
             return View();

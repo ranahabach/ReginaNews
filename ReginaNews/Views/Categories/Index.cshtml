@@ -1,7 +1,7 @@
 ﻿@model IEnumerable<ReginaNews.Models.Category>
     <div class="container p-auto">
         <p>
-            <a asp-action="Create" class="btn-success">Create New</a>
+            <a asp-action="Create" class="btn-success">Create </a>
         </p>
         <table class="table">
             <thead>
@@ -9,7 +9,7 @@
                     <th>
                         @Html.DisplayNameFor(model => model.Name)
                     </th>
-                    <th>
+                    <th style="width:25%">
                         @Html.DisplayNameFor(model => model.Description)
                     </th>
                     <th></th>
