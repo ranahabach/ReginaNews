@@ -51,6 +51,7 @@ namespace ReginaNews.Controllers
         {
             return View();
         }
+      
         public IActionResult DeletNews(int id)
         {
             var News = Db.News.Find(id);
