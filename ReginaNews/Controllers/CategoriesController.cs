@@ -1,9 +1,13 @@
-﻿using System;
+﻿#pragma warning disable IDE0005 // Using directive is unnecessary.
+using System;
 using System.Collections.Generic;
+#pragma warning restore IDE0005 // Using directive is unnecessary.
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+#pragma warning disable IDE0005 // Using directive is unnecessary.
 using Microsoft.AspNetCore.Mvc.Rendering;
+#pragma warning restore IDE0005 // Using directive is unnecessary.
 using Microsoft.EntityFrameworkCore;
 using ReginaNews.Models;
 

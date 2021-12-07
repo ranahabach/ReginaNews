@@ -1,13 +1,19 @@
-﻿using System;
+﻿#pragma warning disable IDE0005 // Using directive is unnecessary.
+using System;
+#pragma warning restore IDE0005 // Using directive is unnecessary.
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
+#pragma warning disable IDE0005 // Using directive is unnecessary.
 using System.Text.Encodings.Web;
+#pragma warning restore IDE0005 // Using directive is unnecessary.
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Identity;
+#pragma warning disable IDE0005 // Using directive is unnecessary.
 using Microsoft.AspNetCore.Identity.UI.Services;
+#pragma warning restore IDE0005 // Using directive is unnecessary.
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;

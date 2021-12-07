@@ -45,13 +45,13 @@ namespace ReginaNews.Controllers
              return View(result);
         }
 
-
         [Authorize]
         public IActionResult Privacy()
         {
             return View();
         }
       
+
         public IActionResult DeletNews(int id)
         {
             var News = Db.News.Find(id);
@@ -68,6 +68,9 @@ namespace ReginaNews.Controllers
         public IActionResult SaveContact(ContactUs model)
             
         {
+            Db.ContactUs.Add(model);
+            Db.SaveChanges();
+
             return RedirectToAction("Index");
         }
         [HttpGet]

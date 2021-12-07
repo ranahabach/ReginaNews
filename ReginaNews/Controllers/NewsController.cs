@@ -1,7 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -9,13 +11,19 @@ using ReginaNews.Models;
 
 namespace ReginaNews.Controllers
 {
+       
+
     public class NewsController : Controller
     {
         private readonly NewsContext _context;
+        [Obsolete]
+        private IHostingEnvironment host;
 
-        public NewsController(NewsContext context)
+        [Obsolete]
+        public NewsController(NewsContext context, IHostingEnvironment hostEnv)
         {
             _context = context;
+            host = hostEnv;
         }
 
         // GET: News
@@ -23,6 +31,7 @@ namespace ReginaNews.Controllers
         {
             var newsContext = _context.News.Include(n => n.Category);
             return View(await newsContext.ToListAsync());
+
         }
 
         // GET: News/Details/5
@@ -45,6 +54,8 @@ namespace ReginaNews.Controllers
         }
 
         // GET: News/Create
+       
+
         public IActionResult Create()
         {
             ViewData["CategoryId"] = new SelectList(_context.Category, "Id", "Name");
@@ -56,10 +67,13 @@ namespace ReginaNews.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Date,Title,Image,Topic,CategoryId")] News news)
+        [Obsolete]
+        public async Task<IActionResult> Create(News news, IFormFile file)
+
         {
-            if (ModelState.IsValid)
+           
             {
+                uploadphoto(  news ,file);
                 _context.Add(news);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
@@ -67,6 +81,8 @@ namespace ReginaNews.Controllers
             ViewData["CategoryId"] = new SelectList(_context.Category, "Id", "Name", news.CategoryId);
             return View(news);
         }
+
+     
 
         // GET: News/Edit/5
         public async Task<IActionResult> Edit(int? id)
@@ -155,5 +171,23 @@ namespace ReginaNews.Controllers
         {
             return _context.News.Any(e => e.Id == id);
         }
+
+        [Obsolete]
+        void uploadphoto(News model, IFormFile file)
+        {
+            if(file !=null)
+            {
+                string uploadFolder = Path.Combine(host.WebRootPath, "assets\\img\\news");
+                string uniqueFileName = file.FileName ;
+                string filePath = Path.Combine(uploadFolder, uniqueFileName);
+                using (var fileStream = new FileStream(filePath, FileMode.Create))
+                {
+                  file .CopyTo(fileStream);
+
+                }
+                model.Image = uniqueFileName;
+            }
+        }
+        }
     }
-}
+

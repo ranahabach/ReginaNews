@@ -1,0 +1,130 @@
+11:19:55.523 GEThttps://localhost:44338/Home/News/2
+[HTTP/2 200 OK 48ms]
+
+11:19:55.635 GEThttps://localhost:44338/img/news/
+[HTTP/2 404 Not Found 31ms]
+
+11:19:55.636 GEThttps://localhost:44338/img/news/14.jpg
+[HTTP/2 404 Not Found 28ms]
+
+11:19:55.638 GEThttps://localhost:44338/img/news/15.jpg
+[HTTP/2 404 Not Found 219ms]
+
+11:19:55.639 GEThttps://localhost:44338/img/news/18.jpg
+[HTTP/2 404 Not Found 219ms]
+
+11:19:55.655 GEThttps://localhost:44338/assets/img/6.png
+[HTTP/2 304 Not Modified 182ms]
+
+11:19:55.672 GEThttps://localhost:44338/assets/img/slide/1.jpg
+[HTTP/2 304 Not Modified 172ms]
+
+11:19:55.676 GEThttps://localhost:44338/assets/img/slide/2.jpg
+[HTTP/2 304 Not Modified 156ms]
+
+11:19:55.677 GEThttps://localhost:44338/assets/img/slide/3.jpg
+[HTTP/2 304 Not Modified 107ms]
+
+11:19:55.687 GEThttps://localhost:44338/assets/vendor/aos/aos.js
+[HTTP/2 304 Not Modified 172ms]
+
+11:19:55.691 GEThttps://localhost:44338/assets/vendor/bootstrap/js/bootstrap.bundle.min.js
+[HTTP/2 304 Not Modified 102ms]
+
+11:19:55.692 GEThttps://localhost:44338/assets/vendor/glightbox/js/glightbox.min.js
+[HTTP/2 304 Not Modified 90ms]
+
+11:19:55.694 GEThttps://localhost:44338/assets/vendor/php-email-form/validate.js
+[HTTP/2 304 Not Modified 152ms]
+
+11:19:55.697 GEThttps://localhost:44338/assets/vendor/purecounter/purecounter.js
+[HTTP/2 304 Not Modified 160ms]
+
+11:19:55.699 GEThttps://localhost:44338/assets/vendor/swiper/swiper-bundle.min.js
+[HTTP/2 304 Not Modified 155ms]
+
+11:19:55.700 GEThttps://localhost:44338/assets/js/main.js
+[HTTP/2 304 Not Modified 164ms]
+
+11:19:55.922 GEThttps://localhost:44338/assets/img/apple-touch-icon.png
+[HTTP/2 404 Not Found 0ms]
+
+11:19:55.923 GEThttps://localhost:44338/assets/img/favicon.png
+[HTTP/2 404 Not Found 0ms]
+
+11:20:30.837 Error in parsing value for ‘transition-delay’.  Declaration dropped. aos.css:1:207
+11:20:30.837 Error in parsing value for ‘transition-delay’.  Declaration dropped. aos.css:1:543
+11:20:30.837 Error in parsing value for ‘transition-delay’.  Declaration dropped. aos.css:1:881
+11:20:30.837 Error in parsing value for ‘transition-delay’.  Declaration dropped. aos.css:1:1219
+11:20:30.837 Error in parsing value for ‘transition-delay’.  Declaration dropped. aos.css:1:1557
+11:20:30.837 Error in parsing value for ‘transition-delay’.  Declaration dropped. aos.css:1:1895
+11:20:30.837 Error in parsing value for ‘transition-delay’.  Declaration dropped. aos.css:1:2233
+11:20:30.837 Error in parsing value for ‘transition-delay’.  Declaration dropped. aos.css:1:2571
+11:20:30.837 Error in parsing value for ‘transition-delay’.  Declaration dropped. aos.css:1:2909
+11:20:30.837 Error in parsing value for ‘transition-delay’.  Declaration dropped. aos.css:1:3247
+11:20:30.837 Error in parsing value for ‘transition-delay’.  Declaration dropped. aos.css:1:3585
+11:20:30.837 Error in parsing value for ‘transition-delay’.  Declaration dropped. aos.css:1:3923
+11:20:30.837 Error in parsing value for ‘transition-delay’.  Declaration dropped. aos.css:1:4261
+11:20:30.837 Error in parsing value for ‘transition-delay’.  Declaration dropped. aos.css:1:4599
+11:20:30.837 Error in parsing value for ‘transition-delay’.  Declaration dropped. aos.css:1:4937
+11:20:30.837 Error in parsing value for ‘transition-delay’.  Declaration dropped. aos.css:1:5275
+11:20:30.837 Error in parsing value for ‘transition-delay’.  Declaration dropped. aos.css:1:5613
+11:20:30.837 Error in parsing value for ‘transition-delay’.  Declaration dropped. aos.css:1:5951
+11:20:30.837 Error in parsing value for ‘transition-delay’.  Declaration dropped. aos.css:1:6289
+11:20:30.837 Error in parsing value for ‘transition-delay’.  Declaration dropped. aos.css:1:6630
+11:20:30.837 Error in parsing value for ‘transition-delay’.  Declaration dropped. aos.css:1:6974
+11:20:30.837 Error in parsing value for ‘transition-delay’.  Declaration dropped. aos.css:1:7320
+11:20:30.837 Error in parsing value for ‘transition-delay’.  Declaration dropped. aos.css:1:7666
+11:20:30.837 Error in parsing value for ‘transition-delay’.  Declaration dropped. aos.css:1:8012
+11:20:30.837 Error in parsing value for ‘transition-delay’.  Declaration dropped. aos.css:1:8358
+11:20:30.837 Error in parsing value for ‘transition-delay’.  Declaration dropped. aos.css:1:8704
+11:20:30.837 Error in parsing value for ‘transition-delay’.  Declaration dropped. aos.css:1:9050
+11:20:30.837 Error in parsing value for ‘transition-delay’.  Declaration dropped. aos.css:1:9396
+11:20:30.838 Error in parsing value for ‘transition-delay’.  Declaration dropped. aos.css:1:9742
+11:20:30.838 Error in parsing value for ‘transition-delay’.  Declaration dropped. aos.css:1:10088
+11:20:30.838 Error in parsing value for ‘transition-delay’.  Declaration dropped. aos.css:1:10434
+11:20:30.838 Error in parsing value for ‘transition-delay’.  Declaration dropped. aos.css:1:10780
+11:20:30.838 Error in parsing value for ‘transition-delay’.  Declaration dropped. aos.css:1:11126
+11:20:30.838 Error in parsing value for ‘transition-delay’.  Declaration dropped. aos.css:1:11472
+11:20:30.838 Error in parsing value for ‘transition-delay’.  Declaration dropped. aos.css:1:11818
+11:20:30.838 Error in parsing value for ‘transition-delay’.  Declaration dropped. aos.css:1:12164
+11:20:30.838 Error in parsing value for ‘transition-delay’.  Declaration dropped. aos.css:1:12510
+11:20:30.838 Error in parsing value for ‘transition-delay’.  Declaration dropped. aos.css:1:12856
+11:20:30.838 Error in parsing value for ‘transition-delay’.  Declaration dropped. aos.css:1:13202
+11:20:30.838 Error in parsing value for ‘transition-delay’.  Declaration dropped. aos.css:1:13546
+11:20:30.838 Error in parsing value for ‘transition-delay’.  Declaration dropped. aos.css:1:13890
+11:20:30.838 Error in parsing value for ‘transition-delay’.  Declaration dropped. aos.css:1:14236
+11:20:30.838 Error in parsing value for ‘transition-delay’.  Declaration dropped. aos.css:1:14582
+11:20:30.838 Error in parsing value for ‘transition-delay’.  Declaration dropped. aos.css:1:14928
+11:20:30.838 Error in parsing value for ‘transition-delay’.  Declaration dropped. aos.css:1:15274
+11:20:30.838 Error in parsing value for ‘transition-delay’.  Declaration dropped. aos.css:1:15620
+11:20:30.838 Error in parsing value for ‘transition-delay’.  Declaration dropped. aos.css:1:15966
+11:20:30.838 Error in parsing value for ‘transition-delay’.  Declaration dropped. aos.css:1:16312
+11:20:30.838 Error in parsing value for ‘transition-delay’.  Declaration dropped. aos.css:1:16658
+11:20:30.838 Error in parsing value for ‘transition-delay’.  Declaration dropped. aos.css:1:17004
+11:20:30.838 Error in parsing value for ‘transition-delay’.  Declaration dropped. aos.css:1:17350
+11:20:30.838 Error in parsing value for ‘transition-delay’.  Declaration dropped. aos.css:1:17696
+11:20:30.838 Error in parsing value for ‘transition-delay’.  Declaration dropped. aos.css:1:18042
+11:20:30.839 Error in parsing value for ‘transition-delay’.  Declaration dropped. aos.css:1:18388
+11:20:30.839 Error in parsing value for ‘transition-delay’.  Declaration dropped. aos.css:1:18734
+11:20:30.839 Error in parsing value for ‘transition-delay’.  Declaration dropped. aos.css:1:19080
+11:20:30.839 Error in parsing value for ‘transition-delay’.  Declaration dropped. aos.css:1:19426
+11:20:30.839 Error in parsing value for ‘transition-delay’.  Declaration dropped. aos.css:1:19772
+11:20:30.839 Error in parsing value for ‘transition-delay’.  Declaration dropped. aos.css:1:20118
+11:20:30.839 Error in parsing value for ‘transition-delay’.  Declaration dropped. aos.css:1:20462
+11:20:30.858 Error in parsing value for ‘-webkit-text-size-adjust’.  Declaration dropped. _reboot.scss:58:2
+11:20:30.859 Unknown pseudo-class or pseudo-element ‘-moz-focus-outer’.  Ruleset ignored due to bad selector. _form-range.scss:23:2
+11:20:30.859 Ruleset ignored due to bad selector. _form-range.scss:38:4
+11:20:30.859 Unknown pseudo-class or pseudo-element ‘-moz-placeholder-shown’.  Ruleset ignored due to bad selector. _floating-labels.scss:30:4
+11:20:30.859 Unknown pseudo-class or pseudo-element ‘-moz-placeholder-shown’.  Ruleset ignored due to bad selector. _floating-labels.scss:50:4
+11:20:30.875 Unknown property ‘-moz-osx-font-smoothing’.  Declaration dropped. bootstrap-icons.css:18:27
+11:20:30.882 Unknown property ‘speak’.  Declaration dropped. boxicons.min.css:1:512
+11:20:30.882 Unknown property ‘-moz-osx-font-smoothing’.  Declaration dropped. boxicons.min.css:1:576
+11:20:30.886 Unknown property ‘-moz-osx-font-smoothing’.  Declaration dropped. all.min.css:5:54
+11:20:30.905 Error in parsing value for ‘-webkit-text-size-adjust’.  Declaration dropped. glightbox.min.css:1:179
+11:20:30.905 Error in parsing value for ‘-moz-text-size-adjust’.  Declaration dropped. glightbox.min.css:1:206
+11:20:30.905 Unknown property ‘text-size-adjust’.  Declaration dropped. glightbox.min.css:1:254
+11:20:30.920 Error in parsing value for ‘transition-delay’.  Declaration dropped. style.css:115:27
+11:20:30.921 Error in parsing value for ‘font-family’.  Declaration dropped. style.css:1479:26
+Elements matching selector: .faq .faq-list .question
+NodeList []

@@ -31,6 +31,16 @@ namespace ReginaNews
             services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseSqlServer(
                     Configuration.GetConnectionString("DefaultConnection")));
+            services.Configure<IdentityOptions>(
+             X =>
+             {
+                 X.Password.RequireUppercase = false;
+                 X.Password.RequireLowercase = false;
+                 X.Password.RequireNonAlphanumeric = false;
+             }
+
+
+                );
 
             services.AddDbContext<NewsContext>(options =>
                options.UseSqlServer(
