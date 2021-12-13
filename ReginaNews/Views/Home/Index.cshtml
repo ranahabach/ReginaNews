@@ -1,51 +1,57 @@
 ﻿<!-- ======= Featured Services Section ======= -->
 @model List<Category>
-
-<section id="featured-services" class="featured-services">
-    <div class="container" data-aos="fade-up">
-
-
-
-        <div class="row">
-
-
-            @foreach (var item in Model)
-            {
-
-               
-
-            <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-7 mb-lg-0">
-                <a href="/Home/News/@item.Id">
-
-                    <div class="icon-box" style="width:100%" data-aos="fade-up" data-aos-delay="100">
-                        <div class="icon"><i class="fas fa-sign"></i> </div>
+   
+    <section id="featured-services" class="featured-services">
+        <div class="container">
+            <iframe width="450" height="225" src="https://www.youtube.com/embed/EfeqXl2TIog" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="410" height="225" src="https://www.youtube.com/embed/9Qx3rdQoggw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="410" height="225" src="https://www.youtube.com/embed/K4Yhx4inSis" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    <hr />
+        <div class="container" data-aos="fade-up">
 
 
-                        <h2 class="title"><a href="/Home/News/@item.Id">@item.Name</a></h2>
-                        <p class="description">@item.Description </p>
 
-                    </div>
-                </a>
+            <div class="row">
 
+
+                @foreach (var item in Model)
+                {
+
+
+
+                <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-7 mb-lg-0" style="border:4px " >
+                    <a href="/Home/News/@item.Id">
+
+                        <div class="icon-box" style="width:100%" data-aos="fade-up" data-aos-delay="100">
+                            <div class="icon"><i class="fas fa-sign"></i> </div>
+
+
+                            <h2 class="title"><a href="/Home/News/@item.Id">@item.Name</a></h2>
+                            <p class="description">@item.Description </p>
+
+                        </div>
+                    </a>
+
+
+                </div>
+
+
+
+
+
+
+
+
+
+
+                }
 
             </div>
 
 
 
-
-
-
-
-
-               
-
-            }
-
         </div>
 
 
-
-    </div>
-
-
-</section><!-- End Featured Services Section -->
+    </section><!-- End Featured Services Section -->

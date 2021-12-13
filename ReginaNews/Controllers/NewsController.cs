@@ -101,12 +101,14 @@ namespace ReginaNews.Controllers
             return View(news);
         }
 
+
         // POST: News/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Date,Title,Image,Topic,CategoryId")] News news)
+        [Obsolete]
+        public async Task<IActionResult> EditAsync(int id, News news, IFormFile file)
         {
             if (id != news.Id)
             {
@@ -117,6 +119,7 @@ namespace ReginaNews.Controllers
             {
                 try
                 {
+                    uploadphoto(news, file);
                     _context.Update(news);
                     await _context.SaveChangesAsync();
                 }
